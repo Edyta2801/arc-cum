@@ -1,0 +1,545 @@
+.grid_start {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+}
+
+.grid_start_identyfikacja {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -ms-grid;
+  display: grid;
+  background-color: #375290;
+  padding: 40px 40px 40px 25%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_identyfikacja::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/identyfikacja_tlom.jpg) no-repeat right top;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_identyfikacja:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_identyfikacja:hover {
+  background-color: transparent;
+}
+
+.grid_start_eventy {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  background-color: #e54000;
+  padding: 40px 40px 40px 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_eventy::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/eventy_tlom.jpg) no-repeat 40% 80%;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_eventy:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_eventy:hover {
+  background-color: transparent;
+}
+
+.grid_start_sprzedaz {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background-color: #b6b6b6;
+  padding: 40px 40px 40px 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_sprzedaz::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/sprzedaz_tlom.jpg) no-repeat 40% 80%;
+  background-size: cover;
+  mix-blend-mode: darken;
+  opacity: .30;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_sprzedaz:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_sprzedaz:hover {
+  background-color: transparent;
+}
+
+.grid_start_wzornictwo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  display: -ms-grid;
+  display: grid;
+  background-color: #000000;
+  padding: 40px 40px 40px 25%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_wzornictwo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/wzornictwo_tlo_tiny.png) no-repeat 120% 60% #000;
+  background-size: auto;
+  mix-blend-mode: luminosity;
+  opacity: .5;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_wzornictwo:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_wzornictwo:hover {
+  background-color: transparent;
+}
+
+.grid_start_strony {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+  background-color: #375290;
+  padding: 10% 40px 40px 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_strony::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/strony_tlom.jpg) no-repeat 40% 80%;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_strony:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_strony:hover {
+  background-color: transparent;
+}
+
+.grid_start_projektowanie {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  background: #e54000;
+  padding: 10% 40px 40px 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_projektowanie::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/projektowanie_tlom.jpg) no-repeat 40% 80%;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_projektowanie:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_projektowanie:hover {
+  background-color: transparent;
+}
+
+.grid_start_filmy {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  background-color: #b6b6b6;
+  padding: 40px 40px 40px 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_filmy::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/wp-content/uploads/2020/05/filmy_tlom.jpg) no-repeat 40% 80%;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid_start_filmy:hover::after {
+  -webkit-filter: none;
+          filter: none;
+  mix-blend-mode: initial;
+  opacity: 1;
+}
+
+.grid_start_filmy:hover {
+  background-color: transparent;
+}
+
+.grid_start > div,
+.grid_start > div > div {
+  /*padding: 40px;*/
+  min-height: 200px;
+  position: relative;
+}
+
+.grid_start h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  z-index: 2;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.grid_start h3:hover {
+  color: #e13f00;
+}
+
+.grid_start_identyfikacja:hover h3,
+.grid_start_sprzedaz:hover h3,
+.grid_start_eventy:hover h3,
+.grid_start_wzornictwo:hover h3,
+.grid_start_strony:hover h3,
+.grid_start_projektowanie:hover h3,
+.grid_start_filmy:hover h3 {
+  color: #e13f00;
+}
+
+.grid_start a.wiecej {
+  color: #fff;
+  z-index: 2;
+}
+
+.grid_start a.wiecej:hover {
+  color: #e13f00;
+}
+
+.uk-tab > .uk-active > a {
+  border-color: #ff0000;
+}
+
+ul#tresc_tab img {
+  width: 30%;
+  max-height: 300px;
+}
+
+ul#tresc_tab {
+  padding-top: 50px;
+}
+
+.uk-tab > * > a {
+  border-bottom: none;
+}
+
+.lazyblock-cumulus-tab-1gBBtp ul > li > p {
+  max-width: 55%;
+}
+
+.uk-tab::before {
+  border-bottom: none;
+}
+
+.uk-tab > li > a > img {
+  max-height: 100px;
+  display: block;
+  margin: 0 auto 20px auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: gray;
+  opacity: 0.5;
+}
+
+.uk-tab > li.uk-active > a > img, .uk-tab > li > a:hover > img {
+  opacity: 1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.uk-tab > li > a {
+  font-size: 0.8em;
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #333;
+}
+
+.uk-tab > .uk-active > a, .uk-tab > * > a:hover, .uk-tab > * > a:focus {
+  color: #e84e0f;
+}
+
+.wp-block-group.alignfull.full .wp-block-group__inner-container {
+  max-width: 100%;
+}
+
+a.wiecej {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 900;
+}
+
+a.wiecej::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f30b";
+  padding-right: 10px;
+}
+
+.co_mozemy {
+  background: url(/wp-content/uploads/2020/05/nasz_serwis_tlo_tiny.png) no-repeat top right;
+  background-size: cover;
+}
+
+.case_study {
+  background: url(/wp-content/uploads/2020/05/case_study_tlo_tiny.png) no-repeat top right;
+  background-size: cover;
+}
+
+.zaufali_nam {
+  background: url(/wp-content/uploads/2020/05/zaufali_nam_tlo_tiny.png) no-repeat top center;
+  background-size: cover;
+}
+
+.full .wp-block-group__inner-container {
+  padding: 40px 0px;
+}
+
+.grid_loga {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.grid_loga_zadowoleni {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.grid_loga_zadowoleni strong {
+  font-size: 7em;
+  line-height: 0.8;
+}
+
+.grid_loga_wszystkich {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6/8;
+  border: none !important;
+}
+
+.grid_loga > div {
+  border: 1px solid #f0f0f0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid_loga > div > p {
+  margin-bottom: 0px;
+  color: #375290;
+  font-weight: 700;
+  padding: 70px 10px;
+  text-align: center;
+}
+
+.site-footer {
+  background: url(/wp-content/uploads/2020/05/kontakt_tlo_tiny.png) no-repeat center center;
+  background-size: cover;
+}
+
+.copyright {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  opacity: 0.3;
+  font-size: 0.8em;
+  margin-top: 80px;
+}
+
+.copyright > div:last-child {
+  text-align: right;
+}
+
+.stopka_kontakt {
+  font-weight: 700;
+}
+
+#aktualnosci-karuzela .date {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin: 10px 0px;
+}
+
+#aktualnosci-karuzela .title {
+  color: #000;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#aktualnosci-karuzela img {
+  max-width: 333px;
+}
+/*# sourceMappingURL=style-czepeq.css.map */

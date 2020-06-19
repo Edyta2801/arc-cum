@@ -1,0 +1,247 @@
+$site-max-width: 1020px;
+$padding-top-page: 13%;
+
+.slideout-navigation.do-overlay {
+    transition: opacity .3s, visibility .3s
+}
+
+#slider-3-slide-7-layer-1 {
+    opacity: .25 !important;
+}
+
+// .home {
+//         .header-image {
+//         filter: brightness(0) invert(1);
+//     }
+// }
+
+.wp-block-cover {
+    .wp-block-cover__inner-container {
+        max-width: $site-max-width !important;
+    }
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin-top: 0;
+}
+
+.wp-block-cover__home {
+    padding-top: 150px;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url(/wp-content/uploads/2020/05/abstract-white.svg);
+        opacity: 0.055;
+        width: 100%;
+        height: 120vh;
+        position: absolute;
+        background-size: cover;
+    }
+
+    p {
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.small-text {
+    font-size: 0.8em;
+}
+
+body.archive {
+    .header-image {
+        filter: none !important;
+    }
+
+    #page {
+        padding-top: $padding-top-page;
+    }
+}
+
+.post-template-default {
+    &.single {
+        #page {
+            padding-top: $padding-top-page;
+        }
+    }
+}
+
+body:not(.home).page-template-default {
+    &.page {
+        #page {
+            padding-top: $padding-top-page;
+        }
+    }
+
+    .secondary-navigation .main-nav ul li a {
+        color: #15182d;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+body:not(.home) {
+    background-image: url('/wp-content/uploads/2020/06/abstract-lite-grey4.svg');
+    background-position: top, left;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.entry-meta {
+    margin-bottom: 2.5em;
+}
+
+.byline,
+.single .byline {
+    display: none;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+.size-3em {
+    font-size: 3em !important;
+    z-index: 10;
+}
+
+.o-nas-tekst {
+    position: relative;
+    transform-style: preserve-3d;
+
+    &::after {
+        content: 'o nas';
+        position: absolute;
+        left: 0;
+        top: -40px;
+        font-size: 6em;
+        color: #F7F7F7;
+        transform: translateZ(-5px);
+
+    }
+}
+
+.dlaczego-tekst {
+    position: relative;
+    transform-style: preserve-3d;
+
+    &::after {
+        content: 'dlaczego my';
+        position: absolute;
+        left: -200px;
+        bottom: 129px;
+        font-size: 4em;
+        color: #F7F7F7;
+        transform: translateZ(-5px);
+        font-weight: 900;
+        line-height: .7em;
+
+    }
+}
+
+.margin-top-170 {
+    margin-top: -170px;
+    z-index: 2;
+    position: relative;
+}
+
+.padding-0-50 {
+    padding: 0 50px;
+}
+
+.footer-widgets {
+    #nav_menu-2 {
+        h2 {
+            &.widget-title {
+                color: #fff;
+                opacity: .6;
+                font-weight: regular;
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #menu-social-menu-1 {
+        display: inline-flex;
+
+        li {
+            padding: 5px;
+            margin: 0 10px 0 0 !important;
+            border: 1px solid white;
+            border-radius: 50%;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            line-height: 20px;
+            opacity: .6;
+            transition: .3s;
+
+            &:hover {
+                opacity: 1;
+                transition: .3s;
+            }
+            a {
+                padding: 8px;
+                margin: 0 -8px;
+            }
+        }
+    }
+    a {
+        &:hover {
+            text-decoration: underline;
+            transition: .3s;
+        }
+    }
+    p {
+        font-weight: bold;
+    }
+}
+
+.pagination-box {
+    // position: relative;
+    // display: inline-flex;
+    // margin: 32px calc(50% - 50vw);
+	// max-width: 100vw;
+	// width: 100vw;
+
+    .pagintation {
+        text-align: center;
+
+            a {
+                position: absolute;
+                color: #fff;
+            }
+    }
+}
+
+// media from generatepress
+@media (max-width: 768px) {
+    /* CSS in here for mobile only */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* CSS in here for tablet only */
+}
+
+@media (min-width: 1025px) {
+
+    /* CSS in here for desktop only */
+    .max_width_450 {
+        max-width: 450px;
+    }
+
+    .add-margin {
+        margin-left: 25%;
+    }
+}
